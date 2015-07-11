@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3815FFA71AC62291009C58B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3815FFA61AC62291009C58B1 /* AppDelegate.swift */; };
+		3815FFA91AC62291009C58B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3815FFA81AC62291009C58B1 /* ViewController.swift */; };
+		3815FFAC1AC62291009C58B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3815FFAA1AC62291009C58B1 /* Main.storyboard */; };
+		3815FFAE1AC62291009C58B1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3815FFAD1AC62291009C58B1 /* Images.xcassets */; };
+		3815FFB11AC62291009C58B1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3815FFAF1AC62291009C58B1 /* LaunchScreen.xib */; };
+		3815FFBD1AC62291009C58B1 /* Healthy_BMI_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3815FFBC1AC62291009C58B1 /* Healthy_BMI_TestTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3815FFB71AC62291009C58B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3815FF991AC62291009C58B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3815FFA01AC62291009C58B1;
+			remoteInfo = "Healthy BMI Test";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3815FFA11AC62291009C58B1 /* BMI Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BMI Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3815FFA51AC62291009C58B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3815FFA61AC62291009C58B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3815FFA81AC62291009C58B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3815FFAB1AC62291009C58B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3815FFAD1AC62291009C58B1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3815FFB01AC62291009C58B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3815FFB61AC62291009C58B1 /* BMI TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BMI TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3815FFBB1AC62291009C58B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3815FFBC1AC62291009C58B1 /* Healthy_BMI_TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Healthy_BMI_TestTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3815FF9E1AC62291009C58B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3815FFB31AC62291009C58B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3815FF981AC62291009C58B1 = {
+			isa = PBXGroup;
+			children = (
+				3815FFA31AC62291009C58B1 /* Healthy BMI Test */,
+				3815FFB91AC62291009C58B1 /* Healthy BMI TestTests */,
+				3815FFA21AC62291009C58B1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3815FFA21AC62291009C58B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3815FFA11AC62291009C58B1 /* BMI Test.app */,
+				3815FFB61AC62291009C58B1 /* BMI TestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3815FFA31AC62291009C58B1 /* Healthy BMI Test */ = {
+			isa = PBXGroup;
+			children = (
+				3815FFA61AC62291009C58B1 /* AppDelegate.swift */,
+				3815FFA81AC62291009C58B1 /* ViewController.swift */,
+				3815FFAA1AC62291009C58B1 /* Main.storyboard */,
+				3815FFAD1AC62291009C58B1 /* Images.xcassets */,
+				3815FFAF1AC62291009C58B1 /* LaunchScreen.xib */,
+				3815FFA41AC62291009C58B1 /* Supporting Files */,
+			);
+			path = "Healthy BMI Test";
+			sourceTree = "<group>";
+		};
+		3815FFA41AC62291009C58B1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3815FFA51AC62291009C58B1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3815FFB91AC62291009C58B1 /* Healthy BMI TestTests */ = {
+			isa = PBXGroup;
+			children = (
+				3815FFBC1AC62291009C58B1 /* Healthy_BMI_TestTests.swift */,
+				3815FFBA1AC62291009C58B1 /* Supporting Files */,
+			);
+			path = "Healthy BMI TestTests";
+			sourceTree = "<group>";
+		};
+		3815FFBA1AC62291009C58B1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3815FFBB1AC62291009C58B1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3815FFA01AC62291009C58B1 /* BMI Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3815FFC01AC62291009C58B1 /* Build configuration list for PBXNativeTarget "BMI Test" */;
+			buildPhases = (
+				3815FF9D1AC62291009C58B1 /* Sources */,
+				3815FF9E1AC62291009C58B1 /* Frameworks */,
+				3815FF9F1AC62291009C58B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BMI Test";
+			productName = "Healthy BMI Test";
+			productReference = 3815FFA11AC62291009C58B1 /* BMI Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3815FFB51AC62291009C58B1 /* BMI TestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3815FFC31AC62291009C58B1 /* Build configuration list for PBXNativeTarget "BMI TestTests" */;
+			buildPhases = (
+				3815FFB21AC62291009C58B1 /* Sources */,
+				3815FFB31AC62291009C58B1 /* Frameworks */,
+				3815FFB41AC62291009C58B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3815FFB81AC62291009C58B1 /* PBXTargetDependency */,
+			);
+			name = "BMI TestTests";
+			productName = "Healthy BMI TestTests";
+			productReference = 3815FFB61AC62291009C58B1 /* BMI TestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3815FF991AC62291009C58B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = Danco;
+				TargetAttributes = {
+					3815FFA01AC62291009C58B1 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					3815FFB51AC62291009C58B1 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 3815FFA01AC62291009C58B1;
+					};
+				};
+			};
+			buildConfigurationList = 3815FF9C1AC62291009C58B1 /* Build configuration list for PBXProject "BMI Test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3815FF981AC62291009C58B1;
+			productRefGroup = 3815FFA21AC62291009C58B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3815FFA01AC62291009C58B1 /* BMI Test */,
+				3815FFB51AC62291009C58B1 /* BMI TestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3815FF9F1AC62291009C58B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3815FFAC1AC62291009C58B1 /* Main.storyboard in Resources */,
+				3815FFB11AC62291009C58B1 /* LaunchScreen.xib in Resources */,
+				3815FFAE1AC62291009C58B1 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3815FFB41AC62291009C58B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3815FF9D1AC62291009C58B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3815FFA91AC62291009C58B1 /* ViewController.swift in Sources */,
+				3815FFA71AC62291009C58B1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3815FFB21AC62291009C58B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3815FFBD1AC62291009C58B1 /* Healthy_BMI_TestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3815FFB81AC62291009C58B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3815FFA01AC62291009C58B1 /* BMI Test */;
+			targetProxy = 3815FFB71AC62291009C58B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3815FFAA1AC62291009C58B1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3815FFAB1AC62291009C58B1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3815FFAF1AC62291009C58B1 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3815FFB01AC62291009C58B1 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3815FFBE1AC62291009C58B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3815FFBF1AC62291009C58B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3815FFC11AC62291009C58B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Healthy BMI Test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "BMI Test";
+			};
+			name = Debug;
+		};
+		3815FFC21AC62291009C58B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Healthy BMI Test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "BMI Test";
+			};
+			name = Release;
+		};
+		3815FFC41AC62291009C58B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Healthy BMI TestTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "BMI TestTests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Healthy BMI Test.app/Healthy BMI Test";
+			};
+			name = Debug;
+		};
+		3815FFC51AC62291009C58B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Healthy BMI TestTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "BMI TestTests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Healthy BMI Test.app/Healthy BMI Test";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3815FF9C1AC62291009C58B1 /* Build configuration list for PBXProject "BMI Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3815FFBE1AC62291009C58B1 /* Debug */,
+				3815FFBF1AC62291009C58B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3815FFC01AC62291009C58B1 /* Build configuration list for PBXNativeTarget "BMI Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3815FFC11AC62291009C58B1 /* Debug */,
+				3815FFC21AC62291009C58B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3815FFC31AC62291009C58B1 /* Build configuration list for PBXNativeTarget "BMI TestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3815FFC41AC62291009C58B1 /* Debug */,
+				3815FFC51AC62291009C58B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3815FF991AC62291009C58B1 /* Project object */;
+}
