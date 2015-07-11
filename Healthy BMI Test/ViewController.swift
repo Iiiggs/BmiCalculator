@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var someParameter = 1
+
     @IBOutlet weak var weightTextField: UITextField!
 
     @IBOutlet weak var heightTextField: UITextField!
