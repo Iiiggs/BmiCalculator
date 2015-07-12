@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
     var someParameter = 1
 
@@ -19,6 +19,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        var weightpickerView = UIPickerView()
+        weightpickerView.delegate = self
+        weightpickerView.dataSource = self
+        weightpickerView.tag = 2
+        weightTextField.inputView = weightpickerView
+
+
+        var heightPickerView = UIPickerView()
+        heightPickerView.delegate = self
+        heightPickerView.dataSource = self
+        heightPickerView.tag = 1
+        heightTextField.inputView = heightPickerView
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,7 +52,85 @@ class ViewController: UIViewController {
             alert.show()
 
         }
+    }
 
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int{
+        if pickerView.tag == 1 {
+            return 2
+
+        } else {
+            return 1
+        }
+    }
+
+
+    // 0
+    // 1
+    //...
+    // 11
+
+    // returns the # of rows in each component..
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int{
+        if pickerView.tag == 1 {
+            if component == 0 {
+                return 5
+            } else {
+                return 12
+            }
+
+        } else {
+            return 231
+        }
+    }
+
+
+    // row:0    title: "70"
+    // row:1    title: "71"
+    // row:2
+    // ....
+    // row:229  title: "299"
+    // row:229  title: "300"
+
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String!
+    {
+        if pickerView.tag == 1 {
+            if component == 0 {
+                return "\(row + 3)'"
+
+            } else {
+                return "\(row)\""
+            }
+
+        } else {
+            return "\(row + 70)"
+        }
+
+    }
+
+
+    var selectedFeetIndex:Int?
+    var selectedInchesIndex:Int?
+
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int){
+
+        if pickerView.tag == 1 {
+
+            if component == 0 {
+                selectedFeetIndex = row
+            }
+            else {
+                selectedInchesIndex = row
+            }
+
+            if selectedFeetIndex != nil && selectedInchesIndex != nil {
+                self.heightTextField.text = "\(selectedFeetIndex! + 3)' \(selectedInchesIndex!)\""
+            } else {
+                self.heightTextField.text = "N/A"
+            }
+
+        } else {
+            weightTextField.text = "\(row + 70) lbs"
+        }
 
     }
 }
