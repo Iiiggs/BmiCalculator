@@ -14,8 +14,11 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 
     @IBOutlet weak var weightTextField: UITextField!
 
-    @IBOutlet weak var heightTextField: UITextField!
+   @IBOutlet weak var heightTextField: UITextField!
 
+    var selectedFeet:Int?
+    var selectedInches:Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -43,14 +46,20 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBAction func calculateBmiPressed(sender: AnyObject) {
 
         let weight = weightTextField.text.toInt()
-        let height = heightTextField.text.toInt()
-
-        if weight != nil && height != nil {
-            let BMI = (weight! / (height! ^ 2)) * 703
-
-           let alert = UIAlertView(title: "Your BMI is", message: BMI.description, delegate: nil, cancelButtonTitle: "OK")
+        
+        if selectedFeet != nil && selectedInches != nil && weight != nil {
+            
+            let height = (selectedFeet! * 12) + selectedInches!
+        
+            let floatHeight = Float(height)
+            
+            let floatWeight = Float(weight!)
+            
+            let BMI = (floatWeight / (floatHeight * floatHeight)) * 703.0
+            
+            let alert = UIAlertView(title: "Your BMI is", message: BMI.description, delegate: nil, cancelButtonTitle: "OK")
             alert.show()
-
+        
         }
     }
 
@@ -108,28 +117,27 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
 
 
-    var selectedFeetIndex:Int?
-    var selectedInchesIndex:Int?
+    
 
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int){
 
         if pickerView.tag == 1 {
 
             if component == 0 {
-                selectedFeetIndex = row
+                selectedFeet = row + 3
             }
             else {
-                selectedInchesIndex = row
+                selectedInches = row
             }
 
-            if selectedFeetIndex != nil && selectedInchesIndex != nil {
-                self.heightTextField.text = "\(selectedFeetIndex! + 3)' \(selectedInchesIndex!)\""
+            if selectedFeet != nil && selectedInches != nil {
+                self.heightTextField.text = "\(selectedFeet!)' \(selectedInches!)\""
             } else {
                 self.heightTextField.text = "N/A"
             }
 
         } else {
-            weightTextField.text = "\(row + 70) lbs"
+            weightTextField.text = "\(row + 70)"
         }
 
     }
