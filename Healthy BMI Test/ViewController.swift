@@ -42,7 +42,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         // Dispose of any resources that can be recreated.
     }
 
-
     @IBAction func calculateBmiPressed(sender: AnyObject) {
 
         let weight = weightTextField.text.toInt()
@@ -57,10 +56,39 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             
             let BMI = (floatWeight / (floatHeight * floatHeight)) * 703.0
             
-            let alert = UIAlertView(title: "Your BMI is", message: BMI.description, delegate: nil, cancelButtonTitle: "OK")
-            alert.show()
-        
-        }
+            // Assigning weight classes to use in pop-ups
+            
+            var underWeightString = "You are underweight"
+            
+            var normalWeightString = "You have a normal weight"
+            
+            var overWeightString = "You are overweight"
+            
+            var obeseWeightString = "You are obese"
+            
+            // Assigning what pop-up will say
+            
+            if BMI <= 18.5 {
+                let alert = UIAlertView(title: underWeightString, message: "Your BMI is \(BMI.description)", delegate: nil, cancelButtonTitle: "OK")
+                alert.show()
+            }
+            
+            if BMI >= 18.5 && BMI <= 24.9 {
+                let alert = UIAlertView(title: normalWeightString, message: "Your BMI is \(BMI.description)", delegate: nil, cancelButtonTitle: "OK")
+                alert.show()
+            }
+            
+            if BMI >= 25 && BMI <= 29.9 {
+                let alert = UIAlertView(title: overWeightString, message: "Your BMI is \(BMI.description)", delegate: nil, cancelButtonTitle: "OK")
+                alert.show()
+            }
+            
+            if BMI >= 30 {
+                let alert = UIAlertView(title: obeseWeightString, message: "Your BMI is \(BMI.description)", delegate: nil, cancelButtonTitle: "OK")
+                alert.show()
+            }
+            
+            }
     }
 
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int{
